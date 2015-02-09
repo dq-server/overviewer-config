@@ -17,6 +17,8 @@ Minecraft Overviewer config files for DQ Server.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 
+Please use [these Git commit message conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.em2hiij8p46d).
+
 ## I'm some guy from the Internet, can I use the code too?
 
 [Yes](LICENSE).
