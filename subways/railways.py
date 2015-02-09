@@ -202,11 +202,11 @@ def subwayRailwayToPois(railway):
 	pois.append({
 		"id": "subways",
 		"x": sys.maxint,
-        "y": sys.maxint,
-        "z": sys.maxint,
-        "text": "",
-        "color": colorToRgb(railway["color"]),
-        "polyline": polyline,
+		"y": sys.maxint,
+		"z": sys.maxint,
+		"text": "",
+		"color": colorToRgb(railway["color"]),
+		"polyline": polyline,
 	})
 
 	return pois

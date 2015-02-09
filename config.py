@@ -10,14 +10,14 @@ from railways import railwaysPois
 
 
 renders["normalrender"] = {
-    "world": "My world",
-    # ...
+	"world": "My world",
+	# ...
 	# Add these two keys to every render where you want the subways to be:
 	# =====
-    "manualpois": stationsPois + railwaysPois,
-    "markers": [
-        {"name": "Subways", "filterFunction": subwaysFilter, "checked": True}
-    ]
+	"manualpois": stationsPois + railwaysPois,
+	"markers": [
+		{"name": "Subways", "filterFunction": subwaysFilter, "checked": True},
+	],
 	# =====
 }
 
