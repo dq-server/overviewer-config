@@ -13,6 +13,10 @@ Minecraft Overviewer config files for DQ Server.
 
 [Yes](https://news.ycombinator.com/item?id=3067434).
 
+## Contribute
+
+In lieu of a formal styleguide, take care to maintain the existing coding style.
+
 ## I'm some guy from the Internet, can I use the code too?
 
 [Yes](LICENSE).
