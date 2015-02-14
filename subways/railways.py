@@ -184,7 +184,7 @@ def normalizePolyline(polyline):
 	for point in polyline:
 		calculatedPoints.append({
 			"x": point["x"],
-			"y": 40,
+			"y": 60,
 			"z": point["z"],
 		})
 
