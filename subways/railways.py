@@ -141,9 +141,9 @@ from stations import subwayStations
 def colorToRgb(color):
 	predefinedColors = {
 		"white": "#CCCCCC",
-		"red": "#CC7272",
+		"red": "#DD5858",
 		"cyan": "#53CCC1",
-		"blue": "#7077CC",
+		"blue": "#5369AF",
 	}
 
 	if color in predefinedColors:
