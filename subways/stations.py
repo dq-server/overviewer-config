@@ -32,7 +32,7 @@ subwayStations = {
 	"Wild Mine": { "x": 75, "z": -12, "color": "blue" },
 
 	#non-subways POI:
-	"End Portal": { "x" : 869, "z" : 500, "color": "cyan"
+	"End Portal": { "x" : 869, "z" : 500, "color": "cyan" },
 }
 
 def subwayStationToPoi(name, info):
