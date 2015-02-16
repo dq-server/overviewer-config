@@ -6,9 +6,9 @@ subwayStations = {
 	"Creeper Station": { "x": 289, "z": -87, "color": "red" },
 	"Inner Yard": { "x": 178, "z": -7, "color": "red" },
 	"Manyak's House": { "x": 178, "z": -87, "color": "red" },
-   	"Pankiss": { "x": 108, "z": -7, "color": "red" },
+	"Pankiss": { "x": 108, "z": -7, "color": "red" },
 	"Respawn Castle": { "x": 110, "z": -87, "color": "red" },
-    	"Supercomputer": { "x": 289, "z": -7, "color": "red" },
+	"Supercomputer": { "x": 289, "z": -7, "color": "red" },
 	"Titans' Hall (red)": { "x": 178, "z": 61, "color": "red" },
 
 	"Lava Columns": { "x": 203, "z": 48, "color": "cyan" },
@@ -30,9 +30,6 @@ subwayStations = {
 	"Underground Canyon Station": { "x": 170, "z": -543, "color": "blue" },
 	"West Outpost": { "x": -329, "z": -12, "color": "blue" },
 	"Wild Mine": { "x": 75, "z": -12, "color": "blue" },
-
-	#non-subways POI:
-	"End Portal": { "x" : 869, "z" : 500, "color": "cyan" },
 }
 
 def subwayStationToPoi(name, info):

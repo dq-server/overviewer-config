@@ -2,10 +2,12 @@
 # =====
 import sys
 sys.path.append("subways")
+sys.path.append("end_portals")
 
 from common import subwaysFilter
 from stations import stationsPois
 from railways import railwaysPois
+from end_portals import endPortalsPois, endPortalsFilter
 # =====
 
 
@@ -17,6 +19,7 @@ renders["normalrender"] = {
 	"manualpois": stationsPois + railwaysPois,
 	"markers": [
 		{"name": "Subways", "filterFunction": subwaysFilter, "checked": True},
+		{"name": "End Portals", "filterFunction": endPortalsFilter, "checked": True},
 	],
 	# =====
 }
