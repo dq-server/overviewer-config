@@ -16,7 +16,7 @@ renders["normalrender"] = {
 	# ...
 	# Add these two keys to every render where you want the subways to be:
 	# =====
-	"manualpois": stationsPois + railwaysPois,
+	"manualpois": stationsPois + railwaysPois + endPortalsPois,
 	"markers": [
 		{"name": "Subways", "filterFunction": subwaysFilter, "checked": True},
 		{"name": "End Portals", "filterFunction": endPortalsFilter, "checked": True},

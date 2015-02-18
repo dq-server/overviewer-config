@@ -5,6 +5,7 @@ Minecraft Overviewer config files for DQ Server.
 
 - Apply changes to your config as described in `config.py`.
 - Copy icons from `icons/` to your `overviewer/web_assets/icons`.
+- Copy icons from `icons/` to your `path/to/rendered/map/icons`
 - Copy the `subways/` to the same directory as your config.
 - Run `overviewer --config=path/to/your/config.py --genpoi`.
 - Open `index.html` from your generated map. You should now see the subways.
