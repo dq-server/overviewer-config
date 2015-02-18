@@ -1,7 +1,7 @@
 #End Portal POI:
 
 endPortals = {
-	"End Portal": { "x" : 869, "z" : 500 },
+	"End Portal": {"x" : 869, "z" : 500},
 }
 
 def endPortalToPoi(name, info):
