@@ -211,4 +211,5 @@ def subwayRailwayToPois(railway):
 
 	return pois
 
-railwaysPois = [poi for pois in map(subwayRailwayToPois, subwayRailways) for poi in pois]
+def railwaysPois():
+	return [poi for pois in map(subwayRailwayToPois, subwayRailways) for poi in pois]

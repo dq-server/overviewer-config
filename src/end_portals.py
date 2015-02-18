@@ -1,7 +1,5 @@
-#End Portal POI:
-
 endPortals = {
-	"End Portal": {"x" : 869, "z" : 500},
+	"End Portal": {"x": 869, "z": 500, "y": 35},
 }
 
 def endPortalToPoi(name, info):
@@ -14,7 +12,8 @@ def endPortalToPoi(name, info):
 		"icon": "icons/end_portal.png",
 	}
 
-endPortalsPois = [endPortalToPoi(name, info) for name, info in endPortals.iteritems()]
+def endPortalsPois():
+	return [endPortalToPoi(name, info) for name, info in endPortals.iteritems()]
 
 def endPortalsFilter(poi):
 	if poi["id"] == "end_portals":

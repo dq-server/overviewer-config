@@ -3,12 +3,28 @@ Minecraft Overviewer config files for DQ Server.
 
 ## How to use
 
-- Apply changes to your config as described in `config.py`.
-- Copy icons from `icons/` to your `overviewer/web_assets/icons`.
-- Copy icons from `icons/` to your `path/to/rendered/map/icons`
-- Copy the `subways/` to the same directory as your config.
-- Run `overviewer --config=path/to/your/config.py --genpoi`.
-- Open `index.html` from your generated map. You should now see the subways.
+- Copy icons from `icons/` to your `rendered_map/icons/`
+- Copy the `src/` to the same directory as your config.
+- Add PoIs and markers to your config:
+  - Add this to the top of your config:
+  ```python
+  import sys
+  sys.path.append("src")
+  import overviewer_config
+  ```
+  - Add this to every render where needed:
+  ```python
+  "manualpois": overviewer_config.manualpois(),
+  "markers": overviewer_config.markers(),
+  ```
+  - If you want to add some other PoIs or markers, just use `+`, e.g.:  
+  ```python
+  "manualpois": overviewer_config.manualpois() + [/*..*/],
+  "markers": [/*..*/] + overviewer_config.markers(),
+  ```
+- Run `overviewer --config=config.py --genpoi`.
+
+All done, open `index.html` from your rendered map.
 
 ## Is it any good?
 

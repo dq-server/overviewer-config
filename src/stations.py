@@ -42,4 +42,5 @@ def subwayStationToPoi(name, info):
 		"icon": "icons/station_" + info["color"] + ".png",
 	}
 
-stationsPois = [subwayStationToPoi(name, info) for name, info in subwayStations.iteritems()]
+def stationsPois():
+	return [subwayStationToPoi(name, info) for name, info in subwayStations.iteritems()]
