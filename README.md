@@ -32,6 +32,19 @@ All done, open `index.html` from your rendered map.
 
 ## Contribute
 
+- Install [Vagrant](http://www.vagrantup.com/downloads.html).
+- In terminal/command line in this directory: `vagrant up`. Wait 5-20 minutes for it to finish, depending on network speed.
+It will create a virtual machine with Ubuntu 12.04, install Minecraft server there, create a new world,
+then install Minecraft client which Overviewer uses for textures,
+then install Overviewer and generate a map.
+- `vagrant ssh`, then in the guest machine: `sudo /vagrant/run.sh`.
+- In host machine, go to `localhost:8080`. You'll see a map generated for testing.
+It will watch for changes, so you can now write code, reload the page and see the changes there.
+
+To stop, exit from the guest machine, then in the host machine: `vagrant halt`.
+
+To launch again, use `vagrant up`, `vagrant ssh`, and `sudo /vagrant/run.sh` again. It will be much faster after the first start.
+
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 Please use [these Git commit message conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.em2hiij8p46d).
