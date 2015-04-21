@@ -12,10 +12,12 @@ renders["normal"] = {
 	"markers": overviewer_config.markers(),
 }
 
-renders["night"] = {
+renders["nether"] = {
 	"world": "Test Server",
-	"title": "Night",
-	"rendermode": "night",
+	"title": "Nether",
+	"rendermode": "lighting",
+	"manualpois": overviewer_config.manualpois("nether"),
+	"markers": overviewer_config.markers("nether"),
 }
 
 outputdir = "/opt/minecraft-map"
