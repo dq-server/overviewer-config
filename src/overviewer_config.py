@@ -5,11 +5,16 @@ from stations import stationsPois
 from railways import railwaysPois
 from end_portals import endPortalsPois
 
-def manualpois():
-	return stationsPois() + railwaysPois() + endPortalsPois()
+def manualpois(dimension = "overworld"):
+	result = stationsPois(dimension) + railwaysPois(dimension)
+	if dimension == "overworld":
+		result += endPortalsPois()
+	return result
 
-def markers():
-	return [
+def markers(dimension = "overworld"):
+	result = [
 		{"name": "Subways", "filterFunction": subwaysFilter, "checked": True},
-		{"name": "End Portals", "filterFunction": endPortalsFilter, "checked": True},
 	]
+	if dimension == "overworld":
+		result.append({"name": "End Portals", "filterFunction": endPortalsFilter, "checked": True})
+	return result

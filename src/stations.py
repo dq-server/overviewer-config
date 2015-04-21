@@ -1,4 +1,7 @@
-subwayStations = {
+subwayStations = {}
+
+
+subwayStations["overworld"] = {
 	"Lucky's House": {"x": 142, "z": 832, "color": "white"},
 	"North-East Watchtower": {"x": 512, "z": -1333, "color": "white"},
 	"TK's House": {"x": 789, "z": 458, "color": "white"},
@@ -42,5 +45,5 @@ def subwayStationToPoi(name, info):
 		"icon": "icons/station_" + info["color"] + ".png",
 	}
 
-def stationsPois():
-	return [subwayStationToPoi(name, info) for name, info in subwayStations.iteritems()]
+def stationsPois(dimension):
+	return [subwayStationToPoi(name, info) for name, info in subwayStations[dimension].iteritems()]

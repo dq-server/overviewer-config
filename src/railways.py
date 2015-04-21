@@ -1,4 +1,6 @@
-subwayRailways = [
+subwayRailways = {}
+
+subwayRailways["overworld"] = [
 	# Red
 	{"color": "red", "way": [
 		{"station": "Inner Yard", "y": 54},
@@ -151,18 +153,18 @@ def colorToRgb(color):
 	else:
 		return color
 
-def wayToPolyline(way):
+def wayToPolyline(way, stations):
 	calculatedPoints = []
 
 	for point in way:
 
 		if "station" in point:
 
-			if point["station"] in subwayStations:
+			if point["station"] in stations:
 				calculatedPoints.append({
-					"x": subwayStations[point["station"]]["x"],
+					"x": stations[point["station"]]["x"],
 					"y": point["y"],
-					"z": subwayStations[point["station"]]["z"],
+					"z": stations[point["station"]]["z"],
 				})
 
 			else:
@@ -190,26 +192,33 @@ def normalizePolyline(polyline):
 
 	return tuple(calculatedPoints)
 
-def subwayRailwayToPois(railway):
-	pois = []
+def subwayRailwayToPois(dimension):
+	stations = subwayStations[dimension]
 
-	polyline = wayToPolyline(railway["way"])
+	def _subwayRailwayToPois(railway):
+		pois = []
 
-	# pois = heightPoisFromPolyline(polyline)
+		polyline = wayToPolyline(railway["way"], stations)
 
-	polyline = normalizePolyline(polyline)
+		# pois = heightPoisFromPolyline(polyline)
 
-	pois.append({
-		"id": "subways",
-		"x": sys.maxint,
-		"y": sys.maxint,
-		"z": sys.maxint,
-		"text": "",
-		"color": colorToRgb(railway["color"]),
-		"polyline": polyline,
-	})
+		polyline = normalizePolyline(polyline)
 
-	return pois
+		pois.append({
+			"id": "subways",
+			"x": sys.maxint,
+			"y": sys.maxint,
+			"z": sys.maxint,
+			"text": "",
+			"color": colorToRgb(railway["color"]),
+			"polyline": polyline,
+		})
 
-def railwaysPois():
-	return [poi for pois in map(subwayRailwayToPois, subwayRailways) for poi in pois]
+		return pois
+
+	return _subwayRailwayToPois
+
+def railwaysPois(dimension):
+	return [poi for pois in
+		map(subwayRailwayToPois(dimension), subwayRailways[dimension])
+		for poi in pois]
