@@ -1,6 +1,7 @@
 cd /opt/minecraft-map
 
 sudo overviewer.py --config=/vagrant/test-config.py --genpoi
+sudo cp -r /vagrant/icons/* /opt/minecraft-map/icons
 
 sudo mkdir /home/vagrant/overviewer-config
 sudo unison /home/vagrant/overviewer-config /vagrant \
