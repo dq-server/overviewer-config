@@ -35,6 +35,11 @@ subwayStations["overworld"] = {
 	"Wild Mine": {"x": 75, "z": -12, "color": "blue"},
 }
 
+subwayStations["nether"] = {
+	"Nether Residence": {"x": 49, "z": 4, "color": "red"},
+	"Cliff's Edge": {"x": 172, "z": 59, "color": "red"},
+}
+
 def subwayStationToPoi(dimension):
 	def _subwayStationToPoi(name, info):
 		return {

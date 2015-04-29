@@ -137,6 +137,14 @@ subwayRailways["overworld"] = [
 	]},
 ]
 
+subwayRailways["nether"] = [
+	{"color": "red", "way": [
+		{"station": "Nether Residence", "y": 60},
+		{"x": 172, "z": 4, "y": 60},
+		{"station": "Cliff's Edge", "y": 60},
+	]},
+]
+
 import sys
 from stations import subwayStations
 
