@@ -26,6 +26,8 @@ Minecraft Overviewer config files for DQ Server.
 
 All done, open `index.html` from your rendered map.
 
+See `test-config.py` for an example. That config is actually used during development.
+
 ## Is it any good?
 
 [Yes](https://news.ycombinator.com/item?id=3067434).
