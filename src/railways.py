@@ -205,7 +205,7 @@ def subwayRailwayToPois(dimension):
 		polyline = normalizePolyline(polyline)
 
 		pois.append({
-			"id": "subways",
+			"id": "subways/" + dimension,
 			"x": sys.maxint,
 			"y": sys.maxint,
 			"z": sys.maxint,

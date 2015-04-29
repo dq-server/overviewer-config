@@ -35,15 +35,18 @@ subwayStations["overworld"] = {
 	"Wild Mine": {"x": 75, "z": -12, "color": "blue"},
 }
 
-def subwayStationToPoi(name, info):
-	return {
-		"id": "subways",
-		"x": info["x"],
-		"y": 60,
-		"z": info["z"],
-		"text": name,
-		"icon": "icons/station_" + info["color"] + ".png",
-	}
+def subwayStationToPoi(dimension):
+	def _subwayStationToPoi(name, info):
+		return {
+			"id": "subways/" + dimension,
+			"x": info["x"],
+			"y": 60,
+			"z": info["z"],
+			"text": name,
+			"icon": "icons/station_" + info["color"] + ".png",
+		}
+	return _subwayStationToPoi
 
 def stationsPois(dimension):
-	return [subwayStationToPoi(name, info) for name, info in subwayStations[dimension].iteritems()]
+	stationToPoi = subwayStationToPoi(dimension)
+	return [stationToPoi(name, info) for name, info in subwayStations[dimension].iteritems()]

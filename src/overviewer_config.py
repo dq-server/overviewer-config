@@ -13,7 +13,7 @@ def manualpois(dimension = "overworld"):
 
 def markers(dimension = "overworld"):
 	result = [
-		{"name": "Subways", "filterFunction": subwaysFilter, "checked": True},
+		{"name": "Subways", "filterFunction": subwaysFilter(dimension), "checked": True},
 	]
 	if dimension == "overworld":
 		result.append({"name": "End Portals", "filterFunction": endPortalsFilter, "checked": True})
