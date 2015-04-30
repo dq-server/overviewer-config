@@ -124,16 +124,52 @@ subwayRailways["overworld"] = [
 		{"station": "East Outpost", "y": 12},
 	]},
 	{"color": "white", "way": [
-		{"station": "North Harbor", "y": 14},
-		{"x": 210, "z": -1333, "y": 14},
-		{"x": 210, "z": -1489, "y": 14},
-		{"x": 210, "z": -1500, "y": 25},
+		{"station": "East Outpost", "y": 12},
+		{"x": 802, "z": -135, "y": 25},
+		{"station": "Spider Nest", "y": 25},
+	]},
+	{"color": "white", "way": [
+		{"station": "Spider Nest", "y": 25},
+		{"x": 802, "z": -1340, "y": 25},
+		{"station": "North-East Watchtower", "y": 25},
+	]},
+	{"color": "white", "way": [
+		{"station": "North-East Watchtower", "y": 25},
+		{"x": 512, "z": -1500, "y": 25},
 		{"station": "North Outpost", "y": 25},
 	]},
 	{"color": "white", "way": [
 		{"station": "North Outpost", "y": 25},
-		{"x": 512, "z": -1500, "y": 25},
-		{"station": "North-East Watchtower", "y": 25},
+		{"x": 210, "z": -1500, "y": 25},
+		{"x": 210, "z": -1489, "y": 14},
+		{"x": 210, "z": -1333, "y": 14},
+		{"station": "North Harbor", "y": 14},
+	]},
+	{"color": "white", "way": [
+		{"station": "North Harbor", "y": 14},
+		{"station": "North Bridge", "y": 14},
+	]},
+	{"color": "white", "way": [
+		{"station": "North Bridge", "y": 14},
+		{"station": "Nyan Cat Base", "y": 14},
+	]},
+	{"color": "white", "way": [
+		{"station": "Nyan Cat Base", "y": 14},
+		{"x": -336, "z": -1340, "y": 25},
+		{"station": "Pole of Cold", "y": 25},
+	]},
+	{"color": "white", "way": [
+		{"station": "Pole of Cold", "y": 25},
+		{"station": "West Outpost", "y": 25},
+	]},
+	{"color": "white", "way": [
+		{"station": "West Outpost", "y": 25},
+		{"station": "Spawn Station", "y": 25},
+	]},
+	{"color": "white", "way": [
+		{"station": "Spawn Station", "y": 25},
+		{"x": -336, "z": 717, "y": 25},
+		{"station": "South Outpost", "y": 51},
 	]},
 ]
 

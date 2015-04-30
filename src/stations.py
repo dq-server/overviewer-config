@@ -3,7 +3,13 @@ subwayStations = {}
 
 subwayStations["overworld"] = {
 	"Lucky's House": {"x": 142, "z": 832, "color": "white"},
+	"North Bridge": {"x": 66, "z": -1340, "color": "white"},
 	"North-East Watchtower": {"x": 512, "z": -1333, "color": "white"},
+	"Nyan Cat Base": {"x": 0, "z": -1340, "color": "white"},
+	"Pole of Cold": {"x": -336, "z": -1001, "color": "white"},
+	"Spawn Station": {"x": -336, "z": 510, "color": "white"},
+	"Spider Nest": {"x": 802, "z": -1125, "color": "white"},
+	"TK's House": {"x": 789, "z": 458, "color": "white"},
 	"TK's House": {"x": 789, "z": 458, "color": "white"},
 
 	"Creeper Station": {"x": 289, "z": -87, "color": "red"},
@@ -20,7 +26,7 @@ subwayStations["overworld"] = {
 	"Deep North Shaft": {"x": 170, "z": -830, "color": "blue"},
 	"Diamond Shaft - Far Side": {"x": 82, "z": 510, "color": "blue"},
 	"Diamond Shaft": {"x": 82, "z": 412, "color": "blue"},
-	"East Outpost": {"x": 770, "z": -105, "color": "blue"},
+	"East Outpost": {"x": 802, "z": -107, "color": "blue"},
 	"Fake North Station": {"x": 170, "z": -381, "color": "blue"},
 	# "North Bridge": {"x": 71, "z": -1339, "color": "blue"},
 	"North Harbor": {"x": 170, "z": -1333, "color": "blue"},
