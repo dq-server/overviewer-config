@@ -14,13 +14,18 @@ Minecraft Overviewer config files for DQ Server.
   ```
   - Add this to every render where needed:
   ```python
+  # By default PoIs are returned for Overworld.
   "manualpois": overviewer_config.manualpois(),
   "markers": overviewer_config.markers(),
+  
+  # For Nether provide dimension as an argument:
+  "manualpois": overviewer_config.manualpois("nether"),
+  "markers": overviewer_config.markers("nether"),
   ```
-  - If you want to add some other PoIs or markers, just use `+`, e.g.:  
+  - If you want to add some other PoIs or markers, just use `+`, e.g.:
   ```python
-  "manualpois": overviewer_config.manualpois() + [/*..*/],
-  "markers": [/*..*/] + overviewer_config.markers(),
+  "manualpois": overviewer_config.manualpois() + [ /*..*/ ],
+  "markers": overviewer_config.markers() + [ /*..*/ ],
   ```
 - Run `overviewer --config=config.py --genpoi`.
 
