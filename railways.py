@@ -250,9 +250,9 @@ def subwayRailwayToPois(dimension):
 
 		pois.append({
 			"id": "subways/" + dimension,
-			"x": sys.maxint,
-			"y": sys.maxint,
-			"z": sys.maxint,
+			"x": sys.maxsize,
+			"y": sys.maxsize,
+			"z": sys.maxsize,
 			"text": "",
 			"color": colorToRgb(railway["color"]),
 			"polyline": polyline,

@@ -60,4 +60,4 @@ def subwayStationToPoi(dimension):
 
 def stationsPois(dimension):
 	stationToPoi = subwayStationToPoi(dimension)
-	return [stationToPoi(name, info) for name, info in subwayStations[dimension].iteritems()]
+	return [stationToPoi(name, info) for name, info in subwayStations[dimension].items()]

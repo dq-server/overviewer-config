@@ -13,7 +13,7 @@ def endPortalToPoi(name, info):
 	}
 
 def endPortalsPois():
-	return [endPortalToPoi(name, info) for name, info in endPortals.iteritems()]
+	return [endPortalToPoi(name, info) for name, info in endPortals.items()]
 
 def endPortalsFilter(poi):
 	if poi["id"] == "end_portals":
