@@ -7,6 +7,7 @@ outputdir = "~/overviewer/map"
 
 renders["north_day"] = {
     "world": "default",
+    "texturepath": "~/overviewer/client.jar",
     "northdirection": "upper-left",
     "title": "A regular render",
     "rendermode": "lighting",
@@ -16,6 +17,7 @@ renders["north_day"] = {
 
 renders["south_day"] = {
     "world": "default",
+    "texturepath": "~/overviewer/client.jar",
     "northdirection": "lower-right",
     "title": "Inverted",
     "rendermode": "lighting",
@@ -25,6 +27,7 @@ renders["south_day"] = {
 
 renders["north_night"] = {
     "world": "default",
+    "texturepath": "~/overviewer/client.jar",
     "northdirection": "upper-left",
     "title": "Night-time",
     "rendermode": "night",
@@ -34,6 +37,7 @@ renders["north_night"] = {
 
 renders["south_night"] = {
     "world": "default",
+    "texturepath": "~/overviewer/client.jar",
     "northdirection": "lower-right",
     "title": "Inverted night-time",
     "rendermode": "night",
@@ -43,6 +47,7 @@ renders["south_night"] = {
 
 renders["nether"] = {
     "world": "default",
+    "texturepath": "~/overviewer/client.jar",
     "northdirection": "upper-left",
     "title": "Nether",
     "rendermode": "nether",
