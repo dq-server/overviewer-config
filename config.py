@@ -1,5 +1,5 @@
 import sys
-sys.path.append("src")
+sys.path.insert(0, '')
 import markers_config
 
 worlds["default"] = "~/minecraft/world"
@@ -10,8 +10,8 @@ renders["north_day"] = {
     "northdirection": "upper-left",
     "title": "A regular render",
     "rendermode": "lighting",
-    "manualpois": overviewer_config.manualpois(),
-    "markers": overviewer_config.markers(),
+    "manualpois": markers_config.manualpois(),
+    "markers": markers_config.markers(),
 }
 
 renders["south_day"] = {
@@ -19,8 +19,8 @@ renders["south_day"] = {
     "northdirection": "lower-right",
     "title": "Inverted",
     "rendermode": "lighting",
-    "manualpois": overviewer_config.manualpois(),
-    "markers": overviewer_config.markers(),
+    "manualpois": markers_config.manualpois(),
+    "markers": markers_config.markers(),
 }
 
 renders["north_night"] = {
@@ -28,8 +28,8 @@ renders["north_night"] = {
     "northdirection": "upper-left",
     "title": "Night-time",
     "rendermode": "night",
-    "manualpois": overviewer_config.manualpois(),
-    "markers": overviewer_config.markers(),
+    "manualpois": markers_config.manualpois(),
+    "markers": markers_config.markers(),
 }
 
 renders["south_night"] = {
@@ -37,8 +37,8 @@ renders["south_night"] = {
     "northdirection": "lower-right",
     "title": "Inverted night-time",
     "rendermode": "night",
-    "manualpois": overviewer_config.manualpois(),
-    "markers": overviewer_config.markers(),
+    "manualpois": markers_config.manualpois(),
+    "markers": markers_config.markers(),
 }
 
 renders["nether"] = {
@@ -47,6 +47,6 @@ renders["nether"] = {
     "title": "Nether",
     "rendermode": "nether",
     "dimension": "nether",
-    "manualpois": overviewer_config.manualpois("nether"),
-    "markers": overviewer_config.markers("nether"),
+    "manualpois": markers_config.manualpois("nether"),
+    "markers": markers_config.markers("nether"),
 }
