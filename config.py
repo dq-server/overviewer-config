@@ -1,6 +1,7 @@
 import sys
 sys.path.insert(0, '')
 import markers_config
+from .observer import JSObserver
 
 WORLD_DIR = os.environ['MINECRAFT_WORLD_DIR']
 OUTPUT_DIR = os.environ['MINECRAFT_MAP_DIR']
@@ -8,6 +9,8 @@ CLIENT_PATH = os.environ['MINECRAFT_CLIENT_PATH']
 
 worlds["default"] = WORLD_DIR
 outputdir = OUTPUT_DIR
+
+observer = JSObserver(OUTPUT_DIR, 10)
 
 renders["north_day"] = {
     "world": "default",
