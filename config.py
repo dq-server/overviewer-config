@@ -2,12 +2,16 @@ import sys
 sys.path.insert(0, '')
 import markers_config
 
-worlds["default"] = "~/minecraft/world"
-outputdir = "~/overviewer/map"
+WORLD_DIR = os.environ['MINECRAFT_WORLD_DIR']
+OUTPUT_DIR = os.environ['MINECRAFT_MAP_DIR']
+CLIENT_PATH = os.environ['MINECRAFT_CLIENT_PATH']
+
+worlds["default"] = WORLD_DIR
+outputdir = OUTPUT_DIR
 
 renders["north_day"] = {
     "world": "default",
-    "texturepath": "~/overviewer/client.jar",
+    "texturepath": CLIENT_PATH,
     "northdirection": "upper-left",
     "title": "A regular render",
     "rendermode": "lighting",
@@ -17,7 +21,7 @@ renders["north_day"] = {
 
 renders["south_day"] = {
     "world": "default",
-    "texturepath": "~/overviewer/client.jar",
+    "texturepath": CLIENT_PATH,
     "northdirection": "lower-right",
     "title": "Inverted",
     "rendermode": "lighting",
@@ -27,7 +31,7 @@ renders["south_day"] = {
 
 renders["north_night"] = {
     "world": "default",
-    "texturepath": "~/overviewer/client.jar",
+    "texturepath": CLIENT_PATH,
     "northdirection": "upper-left",
     "title": "Night-time",
     "rendermode": "night",
@@ -37,7 +41,7 @@ renders["north_night"] = {
 
 renders["south_night"] = {
     "world": "default",
-    "texturepath": "~/overviewer/client.jar",
+    "texturepath": CLIENT_PATH,
     "northdirection": "lower-right",
     "title": "Inverted night-time",
     "rendermode": "night",
@@ -47,7 +51,7 @@ renders["south_night"] = {
 
 renders["nether"] = {
     "world": "default",
-    "texturepath": "~/overviewer/client.jar",
+    "texturepath": CLIENT_PATH,
     "northdirection": "upper-left",
     "title": "Nether",
     "rendermode": "nether",
