@@ -61,7 +61,7 @@ renders["nether"] = {
     "markers": markers_config.markers("nether"),
 }
 
-renders["nether"] = {
+renders["nether_opposite"] = {
     "world": "DQ Server",
     "texturepath": CLIENT_PATH,
     "northdirection": "lower-right",
