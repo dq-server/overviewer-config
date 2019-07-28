@@ -7,55 +7,66 @@ WORLD_DIR = os.environ['MINECRAFT_WORLD_DIR']
 OUTPUT_DIR = os.environ['MINECRAFT_MAP_DIR']
 CLIENT_PATH = os.environ['MINECRAFT_CLIENT_PATH']
 
-worlds["default"] = WORLD_DIR
+worlds["DQ Server"] = WORLD_DIR
 outputdir = OUTPUT_DIR
 
 renders["north_day"] = {
-    "world": "default",
+    "world": "DQ Server",
     "texturepath": CLIENT_PATH,
     "northdirection": "upper-left",
-    "title": "A regular render",
+    "title": "Day",
     "rendermode": "smooth_lighting",
     "manualpois": markers_config.manualpois(),
     "markers": markers_config.markers(),
 }
 
 renders["south_day"] = {
-    "world": "default",
+    "world": "DQ Server",
     "texturepath": CLIENT_PATH,
     "northdirection": "lower-right",
-    "title": "Inverted",
+    "title": "Day (opposite view)",
     "rendermode": "smooth_lighting",
     "manualpois": markers_config.manualpois(),
     "markers": markers_config.markers(),
 }
 
 renders["north_night"] = {
-    "world": "default",
+    "world": "DQ Server",
     "texturepath": CLIENT_PATH,
     "northdirection": "upper-left",
-    "title": "Night-time",
+    "title": "Night",
     "rendermode": "smooth_night",
     "manualpois": markers_config.manualpois(),
     "markers": markers_config.markers(),
 }
 
 renders["south_night"] = {
-    "world": "default",
+    "world": "DQ Server",
     "texturepath": CLIENT_PATH,
     "northdirection": "lower-right",
-    "title": "Inverted night-time",
+    "title": "Night (opposite view)",
     "rendermode": "smooth_night",
     "manualpois": markers_config.manualpois(),
     "markers": markers_config.markers(),
 }
 
 renders["nether"] = {
-    "world": "default",
+    "world": "DQ Server",
     "texturepath": CLIENT_PATH,
     "northdirection": "upper-left",
     "title": "Nether",
-    "rendermode": "nether_smooth_lighting",
+    "rendermode": "nether",
+    "dimension": "nether",
+    "manualpois": markers_config.manualpois("nether"),
+    "markers": markers_config.markers("nether"),
+}
+
+renders["nether"] = {
+    "world": "DQ Server",
+    "texturepath": CLIENT_PATH,
+    "northdirection": "lower-right",
+    "title": "Nether (opposite view)",
+    "rendermode": "nether",
     "dimension": "nether",
     "manualpois": markers_config.manualpois("nether"),
     "markers": markers_config.markers("nether"),
