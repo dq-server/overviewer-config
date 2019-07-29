@@ -9,7 +9,7 @@ subwayStations["overworld"] = {
 	"Pole of Cold": {"x": -336, "z": -1001, "color": "white"},
 	"Spawn Station": {"x": -336, "z": 510, "color": "white"},
 	"Spider Nest": {"x": 802, "z": -1125, "color": "white"},
-	"TK's House": {"x": 789, "z": 458, "color": "white"},
+	"Winter Garden": {"x": 802, "z": 182, "color": "white"},
 	"TK's House": {"x": 789, "z": 458, "color": "white"},
 
 	"Creeper Station": {"x": 289, "z": -87, "color": "red"},
