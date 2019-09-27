@@ -1,64 +1,69 @@
 subwayRailways = {}
 
 subwayRailways["overworld"] = [
-	# Red
-	{"color": "red", "way": [
-		{"station": "Inner Yard", "y": 54},
-		{"station": "Supercomputer", "y": 54},
+	# Center
+	{"color": "blue", "way": [
+		{"station": "Creeper Station", "y": 57},
+		{"x": 278, "z": -112, "y": 57},
+		{"x": 278, "z": -104, "y": 51},
+		{"x": 278, "z": -98, "y": 51},
+		{"x": 278, "z": -71, "y": 25},
+		{"x": 278, "z": -12, "y": 25},
+		{"x": 195, "z": -12, "y": 25},
+		{"x": 195, "z": -4, "y": 25},
+		{"x": 123, "z": -4, "y": 25},
+		{"x": 123, "z": -12, "y": 25},
+		{"x": 120, "z": -12, "y": 25},
+		{"x": 104, "z": -12, "y": 40},
+		{"x": -329, "z": -12, "y": 40},
+		{"station": "West Outpost", "y": 40}
 	]},
-	{"color": "red", "way": [
-		{"station": "Inner Yard", "y": 54},
-		{"station": "Pankiss", "y": 54},
+	{"color": "blue", "way": [
+		{"station": "Creeper Station", "y": 57},
+		{"x": 280, "z": -112, "y": 57},
+		{"x": 280, "z": -104, "y": 51},
+		{"x": 280, "z": -98, "y": 51},
+		{"x": 280, "z": -71, "y": 25},
+		{"x": 280, "z": 159, "y": 25},
+		{"x": 217, "z": 159, "y": 25},
+		{"x": 202, "z": 159, "y": 11},
+		{"x": 188, "z": 159, "y": 11},
+		{"x": 188, "z": 154, "y": 11},
+		{"x": 82, "z": 154, "y": 11},
+		{"x": 82, "z": 293, "y": 11},
+		{"x": 81, "z": 293, "y": 11},
+		{"station": "Stone House", "y": 11}
 	]},
-	{"color": "red", "way": [
-		{"station": "Inner Yard", "y": 16},
-		{"station": "Manyak's House", "y": 16},
+	{"color": "blue", "way": [
+		{"station": "Creeper Station", "y": 57},
+		{"x": 282, "z": -112, "y": 57},
+		{"x": 282, "z": -104, "y": 51},
+		{"x": 282, "z": -98, "y": 51},
+		{"x": 282, "z": -71, "y": 25},
+		{"x": 282, "z": -63, "y": 25},
+		{"x": 293, "z": -63, "y": 25},
+		{"x": 293, "z": -95, "y": 25},
+		{"x": 170, "z": -95, "y": 25},
+		{"x": 170, "z": -381, "y": 25},
+		{"x": 171, "z": -381, "y": 25},
+		{"station": "Fake North Station", "y": 25}
 	]},
-	{"color": "red", "way": [
-		{"station": "Inner Yard", "y": 16},
-		{"station": "Titans' Hall (red)", "y": 16},
-	]},
-	{"color": "red", "way": [
-		{"station": "Manyak's House", "y": 10},
-		{"station": "Creeper Station", "y": 10},
-	]},
-	{"color": "red", "way": [
-		{"station": "Manyak's House", "y": 10},
-		{"station": "Respawn Castle", "y": 10},
-	]},
-
-	# Cyan
-	{"color": "cyan", "way": [
-		{"station": "Creeper Station", "y": 5},
-		{"station": "Supercomputer", "y": 5},
-	]},
-	{"color": "cyan", "way": [
-		{"station": "Old Catacombs", "y": 5},
-		{"station": "Supercomputer", "y": 5},
-	]},
-	{"color": "cyan", "way": [
-		{"station": "Old Catacombs", "y": 5},
-		{"station": "Lava Columns", "y": 5},
+	{"color": "blue", "way": [
+		{"station": "Creeper Station", "y": 57},
+		{"x": 284, "z": -112, "y": 57},
+		{"x": 284, "z": -104, "y": 51},
+		{"x": 284, "z": -98, "y": 51},
+		{"x": 284, "z": -71, "y": 25},
+		{"x": 284, "z": -68, "y": 25},
+		{"x": 286, "z": -68, "y": 25},
+		{"x": 302, "z": -68, "y": 10},
+		{"x": 304, "z": -68, "y": 10},
+		{"x": 304, "z": -105, "y": 10},
+		{"x": 770, "z": -105, "y": 10},
+		{"station": "East Outpost", "y": 10}
 	]},
 
 	# Blue
-	{"color": "blue", "way": [
-		{"station": "Respawn Castle", "y": 40},
-		{"station": "Pankiss", "y": 40},
-	]},
-	{"color": "blue", "way": [
-		{"station": "Wild Mine", "y": 40},
-		{"station": "Pankiss", "y": 40},
-	]},
-	{"color": "blue", "way": [
-		{"station": "Wild Mine", "y": 40},
-		{"station": "West Outpost", "y": 40},
-	]},
-	{"color": "blue", "way": [
-		{"station": "Titans' Hall (blue)", "y": 11},
-		{"x": 82, "z": 154, "y": 11},
-		{"station": "Stone House", "y": 11},
-	]},
 	{"color": "blue", "way": [
 		{"station": "Stone House", "y": 11},
 		{"station": "Stone House Catacombs", "y": 11},
@@ -74,14 +79,6 @@ subwayRailways["overworld"] = [
 	{"color": "blue", "way": [
 		{"station": "Diamond Shaft - Far Side", "y": 11},
 		{"station": "South Outpost", "y": 11},
-	]},
-	{"color": "blue", "way": [
-		{"station": "East Outpost", "y": 10},
-		{"station": "Creeper Station", "y": 10},
-	]},
-	{"color": "blue", "way": [
-		{"station": "Manyak's House", "y": 25},
-		{"station": "Fake North Station", "y": 25},
 	]},
 	{"color": "blue", "way": [
 		{"station": "Fake North Station", "y": 25},
@@ -230,7 +227,7 @@ def normalizePolyline(polyline):
 	for point in polyline:
 		calculatedPoints.append({
 			"x": point["x"],
-			"y": 60,
+			"y": 64,
 			"z": point["z"],
 		})
 
