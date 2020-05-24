@@ -33,6 +33,8 @@ subwayStations["nether"] = {
 	"Cliff's Edge": {"x": 172, "z": 59, "color": "red"},
 }
 
+subwayStations["end"] = {}
+
 def subwayStationToPoi(dimension):
 	def _subwayStationToPoi(name, info):
 		return {

@@ -71,3 +71,25 @@ renders["nether_opposite"] = {
     "manualpois": markers_config.manualpois("nether"),
     "markers": markers_config.markers("nether"),
 }
+
+renders["end"] = {
+    "world": "DQ Server",
+    "texturepath": CLIENT_PATH,
+    "northdirection": "upper-left",
+    "title": "End",
+    "rendermode": [Base(), EdgeLines(), SmoothLighting(strength=0.5)],
+    "dimension": "end",
+    "manualpois": markers_config.manualpois("end"),
+    "markers": markers_config.markers("end"),
+}
+
+renders["end_opposite"] = {
+    "world": "DQ Server",
+    "texturepath": CLIENT_PATH,
+    "northdirection": "lower-right",
+    "title": "End (opposite view)",
+    "rendermode": [Base(), EdgeLines(), SmoothLighting(strength=0.5)],
+    "dimension": "end",
+    "manualpois": markers_config.manualpois("end"),
+    "markers": markers_config.markers("end"),
+}

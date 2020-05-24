@@ -178,6 +178,8 @@ subwayRailways["nether"] = [
 	]},
 ]
 
+subwayRailways["end"] = []
+
 import sys
 from stations import subwayStations
 
